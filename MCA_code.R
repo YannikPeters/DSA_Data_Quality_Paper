@@ -4,11 +4,10 @@ library(tidyverse)
 library(ggplot2)
 library(tidycomm)
 library(ggrepel)
+library(readr)
 
-
-df <- df_new
-
-
+url <- "https://raw.githubusercontent.com/YannikPeters/DSA_Data_Quality_Paper/main/df_new.csv"
+df <- read.csv2(url)
 
 #Recode country variable
 keep_countries <- c(
